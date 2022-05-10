@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:obelix_agency/constants/strings.dart';
 import 'package:sizer/sizer.dart';
 import 'app_routes.dart';
-import 'package:flutter_native_splash/flutter_native_splash.dart';
-
 import 'bussiness_logic/navigation_bottom/nav_bar_cubit.dart';
 import 'presentaion/screen/nav_bottom_bar/nav_bottom_bar.dart';
 import 'presentaion/widgets/splash.dart';
@@ -29,7 +26,7 @@ class MyApp extends StatelessWidget {
           builder: (context, AsyncSnapshot snapshot) {
             // Show splash screen while waiting for app resources to load:
             if (snapshot.connectionState == ConnectionState.waiting) {
-              return MaterialApp(
+              return const MaterialApp(
                 debugShowCheckedModeBanner: false,
                 home: Splash(),
               );
