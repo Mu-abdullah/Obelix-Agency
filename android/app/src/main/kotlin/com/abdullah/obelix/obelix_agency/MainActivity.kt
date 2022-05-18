@@ -1,4 +1,4 @@
-package com.abdullah.obelix.obelix_agency
+package com.abdullah.obelix_agency
 
 import io.flutter.embedding.android.FlutterActivity
 
