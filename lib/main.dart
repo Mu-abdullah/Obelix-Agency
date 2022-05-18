@@ -35,8 +35,8 @@ class MyApp extends StatelessWidget {
               return MaterialApp(
                 debugShowCheckedModeBanner: false,
                 home: BlocProvider(
-                create: (BuildContext context) => NavBarCubit(),
-              child: const NavigationBottom(),
+                  create: (BuildContext context) => NavBarCubit(),
+                  child: const NavigationBottom(),
                 ),
               );
             }

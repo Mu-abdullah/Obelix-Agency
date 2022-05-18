@@ -15,21 +15,20 @@ class NavigationBottom extends StatelessWidget {
       borderRadius: BorderRadius.all(Radius.circular(25)),
     );
     return BlocConsumer<NavBarCubit, NavBarState>(
-        listener: (context, state) {},
-        builder: (context, state) {
-          NavBarCubit cubit = NavBarCubit.get(context);
-          return Scaffold(
-
-            bottomNavigationBar: SalomonBottomBar(
-              items: cubit.bottomItems,
-              onTap: cubit.changeBottomNav,
-              currentIndex: cubit.currentIndex,
-              selectedItemColor: yellow,
-              unselectedItemColor: black,
-            ),
-            body: cubit.screens[cubit.currentIndex],
-
-          );
-        });
+      listener: (context, state) {},
+      builder: (context, state) {
+        NavBarCubit cubit = NavBarCubit.get(context);
+        return Scaffold(
+          bottomNavigationBar: SalomonBottomBar(
+            items: cubit.bottomItems,
+            onTap: cubit.changeBottomNav,
+            currentIndex: cubit.currentIndex,
+            selectedItemColor: yellow,
+            unselectedItemColor: black,
+          ),
+          body: cubit.screens[cubit.currentIndex],
+        );
+      },
+    );
   }
 }
