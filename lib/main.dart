@@ -34,7 +34,6 @@ class MyApp extends StatelessWidget {
               // Loading is done, return the app:
               return MaterialApp(
                 debugShowCheckedModeBanner: false,
-                theme: ThemeData.dark(),
                 home: BlocProvider(
                   create: (BuildContext context) => NavBarCubit(),
                   child: const NavigationBottom(),
