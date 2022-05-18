@@ -276,7 +276,7 @@ class HomeTest extends StatelessWidget {
                       direction: Direction.vertical,
                       offset: 1.5,
                       child: Container(
-                        // height: height * .20,
+                        height: height * .20,
                         width: width * .64,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(15),
@@ -378,11 +378,11 @@ class HomeTest extends StatelessWidget {
                             ],
                           ),
                         ),
-                        // Container(
-                        //   height: height*.3,
-                        //   width: width * .01,
-                        //   color: black,
-                        // ),
+                        Container(
+                          height: height * .3,
+                          width: width * .01,
+                          color: yellow,
+                        ),
                         Padding(
                           padding: const EdgeInsets.all(8.0),
                           child: Column(
