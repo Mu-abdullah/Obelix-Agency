@@ -15,7 +15,6 @@ class ContactUs extends StatelessWidget {
       body: ListView(
         children: [
           Container(
-              height: height,
               width: width,
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(25),
@@ -24,8 +23,7 @@ class ContactUs extends StatelessWidget {
                 children: [
                   Padding(
                     padding: const EdgeInsets.all(8.0),
-                    child:
-                     Image.asset(
+                    child: Image.asset(
                       "assets/images/contact.gif",
                       fit: BoxFit.fitWidth,
                     ),

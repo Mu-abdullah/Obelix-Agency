@@ -33,7 +33,7 @@ class Partner extends StatelessWidget {
                     height: height * 0.02,
                   ),
                   Container(
-                    height: height * 0.40,
+                 
                     width: width,
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10), color: yellow),

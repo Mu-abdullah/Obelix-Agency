@@ -35,7 +35,7 @@ class Customers extends StatelessWidget {
                     height: height * 0.02,
                   ),
                   Container(
-                    height: height * 0.42,
+                    
                     width: width,
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10), color: black),

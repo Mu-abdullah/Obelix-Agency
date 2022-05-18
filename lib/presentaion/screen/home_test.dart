@@ -60,6 +60,7 @@ class HomeTest extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 8),
                 child: Row(
+                  mainAxisSize: MainAxisSize.max,
                   children: [
                     ShowUpAnimation(
                       animationDuration: const Duration(seconds: 2),
@@ -74,12 +75,15 @@ class HomeTest extends StatelessWidget {
                           color: black.withOpacity(.5),
                           backgroundBlendMode: BlendMode.darken,
                           image: const DecorationImage(
-                              image: AssetImage("assets/images/start.jpg"),
+                              image: AssetImage(
+                                "assets/images/start.jpg",
+                              ),
                               fit: BoxFit.cover,
                               colorFilter: ColorFilter.mode(
                                   Color(0xff1b1b1b), BlendMode.hardLight)),
                         ),
                         child: Column(
+                          mainAxisSize: MainAxisSize.max,
                           mainAxisAlignment: MainAxisAlignment.end,
                           children: [
                             Padding(
@@ -119,8 +123,8 @@ class HomeTest extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Padding(
-                              padding:
-                                  const EdgeInsets.symmetric(horizontal: 20),
+                              padding: const EdgeInsets.symmetric(
+                                  horizontal: 8, vertical: 8),
                               child: Center(
                                 child: Text(
                                   "OBELIX is an integrated marketing agency We are schooled in the creativity and proficiency to offer our clients the ingenuity & innovation.",
@@ -149,7 +153,6 @@ class HomeTest extends StatelessWidget {
                       direction: Direction.vertical,
                       offset: 1.5,
                       child: Container(
-                        height: height * .20,
                         width: width * .64,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(15),
@@ -159,8 +162,8 @@ class HomeTest extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Padding(
-                              padding:
-                                  const EdgeInsets.symmetric(horizontal: 20),
+                              padding: const EdgeInsets.symmetric(
+                                  horizontal: 8, vertical: 8),
                               child: Center(
                                 child: Text(
                                   "Our central mission is to assist our clients with beating key business challenges by giving inventive smart business solutions that increment productivity and execution greatness.",
@@ -273,7 +276,7 @@ class HomeTest extends StatelessWidget {
                       direction: Direction.vertical,
                       offset: 1.5,
                       child: Container(
-                        height: height * .20,
+                        // height: height * .20,
                         width: width * .64,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(15),
@@ -283,8 +286,8 @@ class HomeTest extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Padding(
-                              padding:
-                                  const EdgeInsets.symmetric(horizontal: 20),
+                              padding: const EdgeInsets.symmetric(
+                                  horizontal: 8, vertical: 8),
                               child: Center(
                                 child: Text(
                                   "Shape the future of the Business Industries by setting out remarkable worth and opportunity for our clients, employees, investors & business partners.",
