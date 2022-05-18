@@ -133,3 +133,4 @@ final List<String> listOfPartner = [
   'https://i2.wp.com/obelixagency.com/storage/2020/10/16.png?resize=150%2C150&ssl=1',
   'https://i2.wp.com/obelixagency.com/storage/2020/10/14.png?resize=150%2C150&ssl=1',
 ];
+

@@ -45,6 +45,7 @@ dependencies:
   salomon_bottom_bar: ^3.2.0
   flutter_animator: ^3.2.1
   show_up_animation: ^2.0.0
+
   
 
 
@@ -74,6 +75,7 @@ flutter:
   assets:
    - assets/images/
    - assets/fonts/
+
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

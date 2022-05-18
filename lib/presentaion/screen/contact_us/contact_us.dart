@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
-
 import '../../../constants/color.dart';
 import '../../../helper/send_data.dart';
-import '../../widgets/general_widgets.dart';
 
 class ContactUs extends StatelessWidget {
   const ContactUs({Key? key}) : super(key: key);
@@ -13,12 +11,9 @@ class ContactUs extends StatelessWidget {
     var height = MediaQuery.of(context).size.height;
     var width = MediaQuery.of(context).size.width;
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: white,
       body: ListView(
         children: [
-          SizedBox(
-            height: height * .05,
-          ),
           Container(
               height: height,
               width: width,
@@ -29,13 +24,13 @@ class ContactUs extends StatelessWidget {
                 children: [
                   Padding(
                     padding: const EdgeInsets.all(8.0),
-                    child: oneOfOurFriend(context),
+                    child:
+                     Image.asset(
+                      "assets/images/contact.gif",
+                      fit: BoxFit.fitWidth,
+                    ),
                   ),
-                  Image.asset(
-                    "assets/images/contact.gif",
-                    fit: BoxFit.fitWidth,
-                  ),
-                  Row(
+                  Column(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       InkWell(
@@ -43,9 +38,12 @@ class ContactUs extends StatelessWidget {
                           clipBehavior: Clip.antiAlias,
                           color: Colors.transparent,
                           elevation: 0,
-                          child: Column(
+                          child: Row(
                             children: [
                               Image.asset("assets/images/call.png"),
+                              SizedBox(
+                                width: width * .01,
+                              ),
                               Text(
                                 "Call",
                                 style: TextStyle(
@@ -62,18 +60,21 @@ class ContactUs extends StatelessWidget {
                         },
                       ),
                       SizedBox(
-                        width: width * .01,
+                        height: height * .01,
                       ),
                       InkWell(
                         child: Card(
                           clipBehavior: Clip.antiAlias,
                           color: Colors.transparent,
                           elevation: 0,
-                          child: Column(
+                          child: Row(
                             children: [
                               Image.asset("assets/images/whatsapp.png"),
+                              SizedBox(
+                                width: width * .01,
+                              ),
                               Text(
-                                "WApp",
+                                "WhatsApp",
                                 style: TextStyle(
                                   fontSize: 18.sp,
                                   color: black,
@@ -88,16 +89,19 @@ class ContactUs extends StatelessWidget {
                         },
                       ),
                       SizedBox(
-                        width: width * .01,
+                        height: height * .01,
                       ),
                       InkWell(
                         child: Card(
                           clipBehavior: Clip.antiAlias,
                           color: Colors.transparent,
                           elevation: 0,
-                          child: Column(
+                          child: Row(
                             children: [
                               Image.asset("assets/images/mail.png"),
+                              SizedBox(
+                                width: width * .01,
+                              ),
                               Text(
                                 "Email",
                                 style: TextStyle(
@@ -114,16 +118,19 @@ class ContactUs extends StatelessWidget {
                         },
                       ),
                       SizedBox(
-                        width: width * .01,
+                        height: height * .01,
                       ),
                       InkWell(
                         child: Card(
                           clipBehavior: Clip.antiAlias,
                           color: Colors.transparent,
                           elevation: 0,
-                          child: Column(
+                          child: Row(
                             children: [
                               Image.asset("assets/images/messenger.png"),
+                              SizedBox(
+                                width: width * .01,
+                              ),
                               Text(
                                 "Messenger",
                                 style: TextStyle(
@@ -140,16 +147,19 @@ class ContactUs extends StatelessWidget {
                         },
                       ),
                       SizedBox(
-                        width: width * .01,
+                        height: height * .01,
                       ),
                       InkWell(
                         child: Card(
                           clipBehavior: Clip.antiAlias,
                           color: Colors.transparent,
                           elevation: 0,
-                          child: Column(
+                          child: Row(
                             children: [
                               Image.asset("assets/images/map.png"),
+                              SizedBox(
+                                width: width * .01,
+                              ),
                               Text(
                                 "Location",
                                 style: TextStyle(
@@ -166,6 +176,9 @@ class ContactUs extends StatelessWidget {
                         },
                       ),
                     ],
+                  ),
+                  SizedBox(
+                    height: height * .01,
                   ),
                   TextButton(
                       onPressed: () {

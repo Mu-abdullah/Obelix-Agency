@@ -4,6 +4,9 @@
  android:name="io.flutter.embedding.android.SplashScreenDrawable"
  android:resource="@drawable/launch_background"
  />
+ <!-- Required to fetch data from the internet. -->
+<uses-permission android:name="android.permission.INTERNET" />
+
     <queries>
         <!-- If your app opens https URLs -->
         <intent>

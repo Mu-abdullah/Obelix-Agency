@@ -18,7 +18,7 @@ class OurServices extends StatelessWidget {
     var width = MediaQuery.of(context).size.width;
     return SafeArea(
       child: Scaffold(
-          backgroundColor: white,
+          
           body: SingleChildScrollView(
             scrollDirection: Axis.vertical,
             child: Column(

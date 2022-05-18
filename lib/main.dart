@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:obelix_agency/presentaion/screen/contact_us/contact_us.dart';
 import 'package:sizer/sizer.dart';
 import 'app_routes.dart';
 import 'bussiness_logic/navigation_bottom/nav_bar_cubit.dart';
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Sizer(builder: (context, orientation, deviceType) {
-      return FutureBuilder(
+    /*  return FutureBuilder(
           future: Init.instance.initialize(),
           builder: (context, AsyncSnapshot snapshot) {
             // Show splash screen while waiting for app resources to load:
@@ -30,17 +31,19 @@ class MyApp extends StatelessWidget {
                 debugShowCheckedModeBanner: false,
                 home: Splash(),
               );
-            } else {
+            } else {*/
               // Loading is done, return the app:
               return MaterialApp(
                 debugShowCheckedModeBanner: false,
-                home: BlocProvider(
+                // theme: ThemeData.dark(),
+                home: ContactUs() /* BlocProvider(
                   create: (BuildContext context) => NavBarCubit(),
                   child: const NavigationBottom(),
-                ),
+                ),*/
               );
-            }
+           // }
           });
-    });
+    }
+   // );
   }
-}
+//}
