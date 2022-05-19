@@ -30,6 +30,7 @@
         </intent>
     </queries>
    <application
+   
         android:label="Obelix Agency"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">

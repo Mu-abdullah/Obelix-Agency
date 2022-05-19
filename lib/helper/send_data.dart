@@ -2,11 +2,12 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-
+var obelixNumber ="+201559587700";
+ 
 openWhatsapp(context) async{
-  var whatsapp ="+201559587712";
-  var whatsappURlAndroid = "whatsapp://send?phone="+whatsapp+"&text=hello";
-  var whatsappURLIos ="https://wa.me/$whatsapp?text=${Uri.parse("hello")}";
+ 
+  var whatsappURlAndroid = "whatsapp://send?phone="+obelixNumber+"&text=hello";
+  var whatsappURLIos ="https://wa.me/$obelixNumber?text=${Uri.parse("hello")}";
   if(Platform.isIOS){
     if( await canLaunch(whatsappURLIos)){
       await launch(whatsappURLIos, forceSafariVC: false);
@@ -28,7 +29,7 @@ openWhatsapp(context) async{
 }
 
 call() {
-  launch("tel://+201559587712");
+  launch("tel://$obelixNumber");
 }
 
 sendingMails() async {

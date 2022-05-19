@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:obelix_agency/constants/color.dart';
 import '../../constants/strings.dart';
 
 class Splash extends StatelessWidget {
@@ -6,22 +8,25 @@ class Splash extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+     SystemChrome.setPreferredOrientations([
+      DeviceOrientation.portraitUp,
+      DeviceOrientation.portraitDown,
+    ]);
     bool lightMode =
         MediaQuery.of(context).platformBrightness == Brightness.light;
     return Scaffold(
+      backgroundColor: yellow,
       // backgroundColor:
       // lightMode ? black : const Color(0xff042a49),
       body: Center(
           child: lightMode
               ? Image.asset(
-                  'assets/images/splsh.gif',
+                  'assets/images/splsh1.gif',
                   height: MediaQuery.of(context).size.height,
-                  fit: BoxFit.fitHeight,
                 )
               : Image.asset(
-                  'assets/images/splsh.gif',
-                    height: MediaQuery.of(context).size.height,
-                  fit: BoxFit.fitHeight,
+                  'assets/images/splsh1.gif',
+                  height: MediaQuery.of(context).size.height,
                 )),
     );
   }
