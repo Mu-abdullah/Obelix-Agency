@@ -26,15 +26,7 @@ class MyApp extends StatelessWidget {
       DeviceOrientation.portraitDown,
     ]);
     return Sizer(builder: (context, orientation, deviceType) {
-      return MaterialApp(
-        debugShowCheckedModeBanner: false,
-        home: BlocProvider(
-          create: (BuildContext context) => NavBarCubit(),
-          child: const NavigationBottom(),
-        ),
-      );
-
-      /*  FutureBuilder(
+      return FutureBuilder(
           future: Init.instance.initialize(),
           builder: (context, AsyncSnapshot snapshot) {
             // Show splash screen while waiting for app resources to load:
@@ -54,8 +46,6 @@ class MyApp extends StatelessWidget {
               );
             }
           });
-
-           */
     });
   }
 }
