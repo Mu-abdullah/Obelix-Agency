@@ -33,12 +33,14 @@ final List<Widget> imageSliders_partner = listOfPartner
                     ),
                     CachedNetworkImage(
                       imageUrl: item,
+                      height: 180,
+                      width: 200,
                       progressIndicatorBuilder:
                           (context, url, downloadProgress) =>
                               CircularProgressIndicator(
                                   value: downloadProgress.progress),
                       errorWidget: (context, url, error) =>
-                          const Icon(Icons.error),
+                           const CircularProgressIndicator(),
                     ),
                   ],
                 ),

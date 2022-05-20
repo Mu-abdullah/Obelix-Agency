@@ -60,7 +60,7 @@ class ContactUs extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Image.asset(
-                        "assets/images/contact.gif",
+                        "assets/images/friends.gif",
                         fit: BoxFit.fitWidth,
                       ),
                     ),

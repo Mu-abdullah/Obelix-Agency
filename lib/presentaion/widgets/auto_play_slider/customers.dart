@@ -8,7 +8,7 @@ final List<Widget> imageSliders_customers = listOfCustomers
     .map((item) => Container(
           margin: const EdgeInsets.all(5.0),
           child: ClipRRect(
-              borderRadius: BorderRadius.all(Radius.circular(5.0)),
+              borderRadius: const BorderRadius.all(Radius.circular(5.0)),
               child: Card(
                 color: white,
                 elevation: 8,
@@ -28,16 +28,19 @@ final List<Widget> imageSliders_customers = listOfCustomers
                         ),
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 25,
                     ),
                     CachedNetworkImage(
                       imageUrl: item,
+                      height: 180,
+                      width: 200,
                       progressIndicatorBuilder:
                           (context, url, downloadProgress) =>
                               CircularProgressIndicator(
                                   value: downloadProgress.progress),
-                      errorWidget: (context, url, error) => Icon(Icons.error),
+                      errorWidget: (context, url, error) =>
+                          const CircularProgressIndicator(),
                     ),
                   ],
                 ),

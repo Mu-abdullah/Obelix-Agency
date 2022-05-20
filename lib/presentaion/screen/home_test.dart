@@ -18,11 +18,11 @@ class HomeTest extends StatelessWidget {
           height: height,
           decoration: BoxDecoration(
             image: const DecorationImage(
-              image: AssetImage("assets/images/background.jpg"),
-              fit: BoxFit.cover,
-            ),
+                image: AssetImage("assets/images/background.jpg"),
+                fit: BoxFit.cover,
+                colorFilter:
+                    ColorFilter.mode(Color(0xff1b1b1b), BlendMode.hue)),
             color: black.withOpacity(.5),
-            backgroundBlendMode: BlendMode.hardLight,
           ),
           child: ListView(
             children: [
